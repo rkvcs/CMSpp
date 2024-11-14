@@ -19,7 +19,7 @@
         "laravel/pint": "^1.18"
     },
     "scripts": {
-        "lint": "pint -v",
-        "cmspp": "php ./bin/cmspp"
-    }
+        "lint": "pint -v"
+    },
+    "minimum-stability": "stable"
 }
