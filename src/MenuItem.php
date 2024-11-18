@@ -11,6 +11,8 @@ class MenuItem
 
     private ?string $title = null;
 
+    private array $children = [];
+
     public ?AdminPage $page = null;
 
     public function __construct(string $title, string $path)
@@ -33,6 +35,23 @@ class MenuItem
     public function title()
     {
         return $this->title;
+    }
+
+    public function appendChild(MenuItem $menu)
+    {
+        $this->children[] = $menu;
+    }
+
+    public function removeChild(string|int $key)
+    {
+        if (isset($this->children[$key])) {
+            unset($this->children[$key]);
+        }
+    }
+
+    public function children()
+    {
+        return $this->children;
     }
 
     public function setPage(AdminPage $page)

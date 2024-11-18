@@ -94,6 +94,25 @@ class App
                         },
                         icon_url: 'dashicons-admin-settings',
                     );
+
+                    foreach($menu->children() as $item){
+                        $item->page->setTemplate($setup->template);
+                        
+                        add_submenu_page(
+                            parent_slug: $menu->id(),
+                            page_title: ucfirst($item->title()),
+                            menu_title: ucfirst($item->title()),
+                            capability: 'read',
+                            menu_slug: $item->path(),
+                            callback: function () use ($item) {
+                                if ($item->page->is_post()) {
+                                    echo $item->page->post();
+                                } else {
+                                    echo $item->page->get();
+                                }
+                            }
+                        );
+                    }
                 }
 
             });
