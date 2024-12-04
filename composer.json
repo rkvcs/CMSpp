@@ -1,11 +1,11 @@
 {
-    "name": "rkvcs/cmspp",
+    "name": "rkvcs/apidae",
     "type": "library",
     "license": "MIT",
     "version": "0.1.1",
     "autoload": {
         "psr-4": {
-            "rkvcs\\cmspp\\": "src/"
+            "Apidae\\": "src/"
         }
     },
     "require": {

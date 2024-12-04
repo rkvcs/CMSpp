@@ -1,8 +1,8 @@
 <?php
 
-namespace rkvcs\cmspp;
+namespace Apidae;
 
-use rkvcs\cmspp\interfaces\TemplateEngine;
+use Apidae\interfaces\TemplateEngine;
 
 class TwigEngine implements TemplateEngine
 {

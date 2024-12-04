@@ -1,6 +1,6 @@
 <?php
 
-namespace rkvcs\cmspp\interfaces;
+namespace Apidae\interfaces;
 
 interface AdminPage
 {

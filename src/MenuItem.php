@@ -1,9 +1,9 @@
 <?php
 
-namespace rkvcs\cmspp;
+namespace Apidae;
 
 use Cocur\Slugify\Slugify;
-use rkvcs\cmspp\interfaces\AdminPage;
+use Apidae\interfaces\AdminPage;
 
 class MenuItem
 {

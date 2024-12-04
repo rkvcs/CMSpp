@@ -1,6 +1,6 @@
 <?php
 
-namespace rkvcs\cmspp\resources;
+namespace Apidae\resources;
 
 class Style
 {

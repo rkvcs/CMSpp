@@ -1,10 +1,10 @@
 <?php
 
-namespace rkvcs\cmspp;
+namespace Apidae;
 
-use rkvcs\cmspp\interfaces\TemplateEngine;
-use rkvcs\cmspp\resources\JS;
-use rkvcs\cmspp\resources\Style;
+use Apidae\interfaces\TemplateEngine;
+use Apidae\resources\JS;
+use Apidae\resources\Style;
 
 class App
 {

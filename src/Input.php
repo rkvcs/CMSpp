@@ -1,6 +1,6 @@
 <?php
 
-namespace rkvcs\cmspp;
+namespace Apidae;
 
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;

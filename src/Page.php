@@ -1,9 +1,9 @@
 <?php
 
-namespace rkvcs\cmspp;
+namespace Apidae;
 
-use rkvcs\cmspp\interfaces\AdminPage;
-use rkvcs\cmspp\interfaces\TemplateEngine;
+use Apidae\interfaces\AdminPage;
+use Apidae\interfaces\TemplateEngine;
 
 class Page implements AdminPage
 {
