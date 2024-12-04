@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: CMSpp
+ * Plugin Name: Apidae
  * Version: 1.0
  */
 
@@ -70,18 +70,18 @@ $scriptApp = new JS(
     deps: []
 );
 
-$app = new App(resources: plugins_url('/thfiles', __FILE__));
+$app = new App(resources: plugins_url('/assets', __FILE__));
 $app->addStyleToAdmin($styleApp);
 $app->addScriptToAdmin($scriptApp);
 
 $twigEngine = new TwigEngine;
-$twigEngine->setFolder(__DIR__.'/thfiles/templates');
+$twigEngine->setFolder(__DIR__.'/templates');
 
 $page = new CustomPage();
 $page2 = new CustomSubPage();
 
 // Menu
-$mainMenu = new MenuItem(title: 'Olah', path: 'olah');
+$mainMenu = new MenuItem(title: 'Hello', path: 'hello');
 $mainMenu->setPage($page);
 // Submenu
 $subMenu = new MenuItem(title: 'Hi', path: 'hi');

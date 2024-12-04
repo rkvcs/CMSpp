@@ -1,0 +1,25 @@
+<div class="lotus-wrap content" x-data="{ count: 0 }">
+    <h1 class="pm10 text-3xl font-bold underline">
+        {% if name %}
+            Hello {{name}}!
+        {% else %}
+            {{title}}
+        {% endif %}
+    </h1>
+    <p>Mussum Ipsum, cacilds vidis litro abertis.  Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Sapien in monti palavris qui num significa nadis i pareci latim. Interagi no mé, cursus quis, vehicula ac nisi. Pra lá, depois divoltis porris, paradis. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.</p>
+    <button class="btn btn-primary" x-on:click="count++">Say hi</button>
+    <template x-if="(count > 0)">
+        <div>
+            <hr/>
+            <div>counter of hi: <span x-text="count"></span></div>
+        </div>
+    </template>
+    <hr>
+    <form method="post" style="background-color: #fff; padding: 1rem">
+        <div>
+            <label for="title">Name:</label>
+            <input type="text" name="name" value="{{name}}">
+        </div>
+        <button class="btn btn-primary" type="submit">send</button>
+    </form>
+</div>
